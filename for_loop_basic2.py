@@ -67,21 +67,22 @@ def minimum(listx):
     return mini
 print(minimum([]))
 
-
 # 7. #check on returning false# Maximum - Create a function that takes a list and returns the maximum value in the array. If the list is empty, have the function return False.
 # Example: maximum([37,2,1,-9]) should return 37
 # Example: maximum([]) should return False
 def maximum(listx):
     max = 0
+    if len(listx)==0:
+        return False
+    else:
+        pass
     for x in listx:
         if x>max:
             max = x
-        elif len(listx)==0:
-            return(False)
         else:
             pass
-    return max
-print(maximum([]))
+        return max
+print(maximum([37,2,1,-9]))
 
 # 8. Ultimate Analysis - Create a function that takes a list and returns a dictionary that has the sumTotal, average, minimum, maximum and length of the list.
 # Example: ultimate_analysis([37,2,1,-9]) should return {'sumTotal': 31, 'average': 7.75, 'minimum': -9, 'maximum': 37, 'length': 4 }
@@ -101,7 +102,6 @@ def ult_analysis(listx):
     average = sumTotal/(len(listx))
     return{'sumTotal': sumTotal, 'average': average, 'minimum': minimum, 'maximum': maximum, 'length': length}
 print(ult_analysis([37,2,1,-9]))
-
 
 # 9. Reverse List - Create a function that takes a list and return that list with values reversed. Do this without creating a second list. (This challenge is known to appear during basic technical interviews.)
 # Example: reverse_list([37,2,1,-9]) should return [-9,1,2,37]
