@@ -42,16 +42,16 @@ students = [
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
 
-def iterateDictionary(listx):
-    for x in range (len(listx)):
-        new_dict = listx[x]
-        # strx = ''
-        # for y in range (len(new_dict)):
-        for key in new_dict:
-            print(key, '-', new_dict[key])
-            # print(strx)
+# def iterateDictionary(listx):
+#     for x in range (len(listx)):
+#         new_dict = listx[x]
+#         # strx = ''
+#         # for y in range (len(new_dict)):
+#         for key in new_dict:
+#             print(key, '-', new_dict[key])
+#             # print(strx)
                 
-iterateDictionary(students)
+# iterateDictionary(students)
 
 # should output: (it's okay if each key-value pair ends up on 2 separate lines;
 # bonus to get them to appear exactly as below!)
@@ -59,6 +59,29 @@ iterateDictionary(students)
 # first_name - John, last_name - Rosales
 # first_name - Mark, last_name - Guillen
 # first_name - KB, last_name - Tonel
+
+# 3.Get Values From a List of Dictionaries
+# Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries and a key name, the function prints the value stored in that key for each dictionary. For example, iterateDictionary2('first_name', students) should output:
+# Michael
+# John
+# Mark
+# KB
+# And iterateDictionary2('last_name', students) should output:
+# Jordan
+# Rosales
+# Guillen
+# Tonel
+
+# def iterateDictionary2(key_name, some_list):
+#     for x in range (len(some_list)):
+#         new_dict = some_list[x]
+#         for key in new_dict:
+#             if key == key_name:
+#                 print(new_dict[key])
+#             else:
+#                 pass
+                
+# iterateDictionary2('last_name', students)
 
 #4.
 
