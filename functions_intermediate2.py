@@ -45,9 +45,12 @@ students = [
 def iterateDictionary(listx):
     for x in range (len(listx)):
         new_dict = listx[x]
+        # strx = ''
+        # for y in range (len(new_dict)):
         for key in new_dict:
             print(key, '-', new_dict[key])
-
+            # print(strx)
+                
 iterateDictionary(students)
 
 # should output: (it's okay if each key-value pair ends up on 2 separate lines;
